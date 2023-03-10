@@ -1,7 +1,9 @@
 ﻿using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class CollisionHandler : MonoBehaviour
 {
+    AudioSource audioSource;
     void OnCollisionEnter(Collision other) 
     {
         switch (other.gameObject.tag)
@@ -10,14 +12,30 @@ public class CollisionHandler : MonoBehaviour
                 Debug.Log("Friendly");
                 break;
             case "Finish":
-                Debug.Log("Finished!");
-                break;
-            case "Fuel":
-                Debug.Log("Fuel");
+                NextScene();
                 break;
             default:
-                Debug.Log("Boom");
+                ReloadScene();
                 break;
         }
     }
+
+    void ReloadScene()
+    {
+        int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
+        SceneManager.LoadScene(currentSceneIndex);
+    }
+
+    void NextScene()
+    {
+        int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
+        int nextSceneIndex = currentSceneIndex + 1;
+        if (nextSceneIndex == SceneManager.sceneCountInBuildSettings)
+        {
+            nextSceneIndex = 0;
+        }
+        SceneManager.LoadScene(nextSceneIndex);
+    }
+
+
 }
