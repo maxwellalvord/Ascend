@@ -227,13 +227,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: Landing Pad
       objectReference: {fileID: 0}
+    - target: {fileID: 5316463092447886413, guid: b5db7895433e3ba478e4cfd0e4b4d7f7, type: 3}
+      propertyPath: m_TagString
+      value: Finish
+      objectReference: {fileID: 0}
     - target: {fileID: 8754148710063154908, guid: b5db7895433e3ba478e4cfd0e4b4d7f7, type: 3}
       propertyPath: m_RootOrder
       value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 8754148710063154908, guid: b5db7895433e3ba478e4cfd0e4b4d7f7, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 9.7
+      value: 24.3
       objectReference: {fileID: 0}
     - target: {fileID: 8754148710063154908, guid: b5db7895433e3ba478e4cfd0e4b4d7f7, type: 3}
       propertyPath: m_LocalPosition.y
@@ -349,13 +353,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
-  m_LocalRotation: {x: 0.07692631, y: -0, z: -0, w: 0.9970369}
-  m_LocalPosition: {x: 0, y: 6.6, z: -9.98}
+  m_LocalRotation: {x: 0.14698294, y: -0, z: -0, w: 0.989139}
+  m_LocalPosition: {x: 6.51, y: 8.93, z: -16.32}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 8.824, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 16.904, y: 0, z: 0}
 --- !u!1001 &442473020983875443
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -369,19 +373,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1140427481360547935, guid: c95c35563ca3aa547a74d6fe7e49df73, type: 3}
       propertyPath: m_LocalScale.x
-      value: 8.391183
+      value: 23.473495
       objectReference: {fileID: 0}
     - target: {fileID: 1140427481360547935, guid: c95c35563ca3aa547a74d6fe7e49df73, type: 3}
       propertyPath: m_LocalScale.y
-      value: 4.1948223
+      value: 5.7834015
       objectReference: {fileID: 0}
     - target: {fileID: 1140427481360547935, guid: c95c35563ca3aa547a74d6fe7e49df73, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.9
+      value: 8.17
       objectReference: {fileID: 0}
     - target: {fileID: 1140427481360547935, guid: c95c35563ca3aa547a74d6fe7e49df73, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 7.77
+      value: 9.95
       objectReference: {fileID: 0}
     - target: {fileID: 1140427481360547935, guid: c95c35563ca3aa547a74d6fe7e49df73, type: 3}
       propertyPath: m_LocalPosition.z
@@ -431,7 +435,7 @@ PrefabInstance:
     - target: {fileID: 4963953008800442992, guid: b5db7895433e3ba478e4cfd0e4b4d7f7, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 0c1ef566303d56c40b722d7f97c9bddd, type: 2}
+      objectReference: {fileID: 2100000, guid: 36db564b3b74b934f824268145d47c7f, type: 2}
     - target: {fileID: 5316463092447886413, guid: b5db7895433e3ba478e4cfd0e4b4d7f7, type: 3}
       propertyPath: m_Name
       value: Launch Pad

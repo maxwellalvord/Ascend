@@ -5,6 +5,7 @@ using UnityEngine.SceneManagement;
 public class CollisionHandler : MonoBehaviour
 {
     [SerializeField] float levelLoadDelay = 1.9f;
+    [SerializeField] float levelSuccessLoadDelay = 1.7f;
     [SerializeField] AudioClip success;
     [SerializeField] AudioClip death;
     [SerializeField] ParticleSystem successPlasma;
@@ -44,7 +45,7 @@ public class CollisionHandler : MonoBehaviour
         audioSource.PlayOneShot(success);
         successPlasma.Play();
         GetComponent<Movement>().enabled = false;
-        Invoke("NextLevel", levelLoadDelay);
+        Invoke("NextLevel", levelSuccessLoadDelay);
     }
 
     void StartCrashSequence()

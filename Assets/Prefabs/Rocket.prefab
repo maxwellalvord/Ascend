@@ -278,6 +278,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   levelLoadDelay: 3
+  levelSuccessLoadDelay: 2
   success: {fileID: 8300000, guid: bd719e459e7124a4596755e165c4e10d, type: 3}
   death: {fileID: 8300000, guid: f2a988a3f552ae74c8673ca3b30135a7, type: 3}
   successPlasma: {fileID: 7360150999547443136}
